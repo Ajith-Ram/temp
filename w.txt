@@ -1,0 +1,253 @@
+1. Create a simple servlet code display hello World. Newservlet.java
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+@WebServlet(urlPatterns = {"/NewServlet"})
+public class NewServlet extends HttpServlet {
+protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+throws ServletException, IOException {
+response.setContentType("text/html;charset=UTF-8");
+try (PrintWriter out = response.getWriter()) {
+out.println("<!DOCTYPE html>");
+out.println("<html>");
+out.println("<head>");
+out.println("<title>Servlet NewServlet</title>");
+out.println("</head>");
+out.println("<body>");
+out.println("<h1>Servlet NewServlet at " + request.getContextPath() +
+"</h1>");
+out.println("</body>");
+out.println("</html>");
+}
+}
+@Override
+protected void doGet(HttpServletRequest request, HttpServletResponse response)
+throws ServletException, IOException {
+processRequest(request, response);
+}
+@Override
+protected void doPost(HttpServletRequest request, HttpServletResponse response)
+throws ServletException, IOException {
+processRequest(request, response);
+}
+@Override
+public String getServletInfo() {
+return "Short description";
+}
+}
+
+2. Write a Servlet Programme to print the current date and time . CurrentDateTimeServlet.java
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+/**
+*
+* @author RAFEEQ
+*/
+@WebServlet(name = "CurrentDateTimeServlet", urlPatterns =
+{"/CurrentDateTimeServlet"})
+public class CurrentDateTimeServlet extends HttpServlet {
+@Override
+protected void doGet(HttpServletRequest request, HttpServletResponse response)
+throws IOException {
+response.setContentType("text/html;charset=UTF-8");
+try (PrintWriter out = response.getWriter()) {
+out.println("<!DOCTYPE html>");
+out.println("<html>");
+out.println("<head>");
+out.println("<title>Current Date and Time Servlet</title>");
+out.println("</head>");
+out.println("<body>");
+out.println("<h1>Current Date and Time</h1>");
+// Get the current date and time
+SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd
+HH:mm:ss");
+Date currentDate = new Date();
+String formattedDate = dateFormat.format(currentDate);
+out.println("<p>The current date and time is: " + formattedDate + "</p>");
+out.println("</body>");
+out.println("</html>");
+}
+}
+}
+
+SESSION 2: JSP Projects Using NETBEANS IDE20
+
+Step 1: Create a New Web Application Project
+
+ Open NetBeans.  Go to File -> New Project.  Choose Java Web -> Web Application and click Next.  Enter a project name, choose a project location, and click Next.  Select the server you want to use (e.g., Apache Tomcat). Click Next.  click Finish. Step 2: Create JSP Pages
+ Right-click on the Web Pages directory in your project.  Choose New -> JSP.  Enter the JSP file name (e.g., index.jsp). Click Finish.  Edit the JSP file to include your content. Step 3: Build & Run the Project
+ Right-click on the project.  Select Build.  Right-click on the project.  Select run.  Opens default browser to show the output
+
+
+3. Create a Simple Jsp program to print Hello from my JSP Page
+
+index.jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My JSP Page</title>
+</head>
+<body>
+<h1>Hello from my JSP Page</h1>
+</body>
+</html>
+
+4. Write JSP Programme to print current date and time along with timestamp, implement auto-refresh of a page. 
+
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.DateFormat" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%
+// Set refresh interval (in seconds)
+response.setIntHeader("Refresh", 5);
+// Refresh every 5 seconds
+// Get current date and time
+Date currentDate = new Date();
+// Format date and time
+DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+String formattedDate = df.format(currentDate);
+// Get timestamp
+long timestamp = currentDate.getTime();
+%>
+<html>
+<head>
+<title>Current Date and Time</title>
+</head>
+<body>
+<h1>Current Date and Time:</h1>
+<p><%= formattedDate %></p>
+<p>Timestamp: <%= timestamp %></p>
+</body>
+</html>
+
+5. Create a Jsp program to create Student registration form and display the details in
+
+another page
+Index.jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Read Student Information</title>
+</head>
+<body>
+<h1>Enter Student Information:</h1>
+<form action="viewstd.jsp" method=”post”>
+<label for="studentId">Student ID:</label>
+<input type="text" id="studentId" name="studentId" required><br>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+<label for="course">Course:</label>
+<input type="text" id="course" name="course" required><br><br>
+<label for="address">Address:</label>
+<textarea id="address" name="address" rows="4" cols="50"
+required></textarea><br><br>
+<label for="sex">Sex:</label>
+<input type="radio" id="male" name="sex" value="male" required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="sex" value="female">
+<label for="female">Female</label><br><br>
+<input type="submit" value="View Details">
+</form>
+</body>
+</html>
+Viewstd.jsp
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<html>
+<head>
+<title>Student Details</title>
+</head>
+<body>
+<%
+String studentId = request.getParameter("studentId");
+String name = request.getParameter("name");
+String course = request.getParameter("course");
+String address = request.getParameter("address");
+String sex = request.getParameter("sex");
+%>
+<h2>Student Details</h2>
+<p>Student ID: <%= studentId %></p>
+<p>Name: <%= name %></p>
+<p>Course: <%= course %></p>
+<p>Address: <%= address %></p>
+<p>Sex: <%= sex %></p>
+</body>
+</html>
+
+SESSION 3:Spring Boot Projects
+
+6. Create a Maven-based project using Spring Initializr.  Use Spring Initializr:
+
+ Access https://start.spring.io: https://start.spring.io in your web browser.  Configure Project:
+ Select Project -Maven
+ Select Language-Java
+ Select Spring Boot-3.2.2 (Choose a compatible version)
+ Project Metadata
+Group: Eg: com.example: com.example
+Artifact: Name of the artifact (same as the name of project)
+: spring-boot
+Name: Name of the project :spring-boot
+Description:Description of project :Demo project for Spring Boot
+Package name: com.example.spring-boot3
+ Packaging : Jar
+ Dependencies: Add necessary dependencies (e.g., Spring Web for web
+applications): Spring Web
+ Generate Project: Click "Generate" to download a project archive.  Extract Archive:
+ Unzip the downloaded project file in to you own directory
+ Import Project into EclipseIDE:
+ Open Eclipse and navigate to open the Project
+File → Open Projects from file system → Click on Directory and
+Select the Spring-boot folder→ click on Finish.  window will open
+ The system will download all dependencies automatically from the internet. Wait till the process is completed. The default directory structure of the
+project is shown in the Project Panel on the left-hand side Internet is
+compulsory for working with maven.  Explore Project Structure:
+ Project Files: Review the generated files and folders, including:
+ src/main/java: Contains your Java source code.
+ src/main/resources: Stores application configuration files.  pom.xml (Maven) :Manages project dependencies and build
+process.  Create a Simple Web Application
+ Now you can create a web controller for a simple web application, as the
+following listing from
+src/main/java/com/example/springboot/HelloController.java
+ if HelloController.java not available then we add a class HelloController
+ Right click on src/main/java →Select new → Click
+other→select a class →Click next →Specify class name as
+HelloController on opened window→click finish
+
+ Write the following code
+HelloController.java
+package com.example.springboot2;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class HelloController {
+@GetMapping("/")
+public String index() {
+return "Greetings from IGNOU LAB SESSION!";
+}
+}
+
+Application.java
+package com.example.springboot2;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class HelloController {
+@GetMapping("/")
+public String index() {
+return "Greetings from IGNOU LAB SESSION!";
+}
+}
