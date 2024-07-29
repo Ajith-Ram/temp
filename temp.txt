@@ -1,0 +1,1226 @@
+
+Question 1:
+
+Create a vector of size 10, having the values 5,7,9,11,13,13,11,9,7,5. Compute
+the sum, mean, highest and lowest of these values. Compute the length of this
+vector? Find the variance and standard deviation for the data of this vector,
+using the formula for variance and standard deviation. Compare these values by
+computing the variance and standard deviation using R function. Sort this array
+values in decreasing order.
+
+Question 2:
+
+Create a vector of first 50 even numbers, starting from 2. Also create a vector
+having values 30 down to 1, as 30, 29, ...,1
+
+Question 3:
+
+Create a vector of size 10 with Sth and 7th values as missing (store these values
+as NA). Use the “is.na()” to find locations of missing data.
+
+Question 4:
+
+99 66599 Co 99
+
+Create a vector of characters of size 5, consisting of values: “This” “is” “a
+“character” “
+or match().
+
+oor 99
+
+vector”. Find the index of value “is” in the vector using which()
+
+Question 5:
+
+It is always good to store numerical values rather than textual data. However,
+while input or output the textual values are easier to understand. An example,
+for this is as follows in R:
+
+> Fivepointscale=c(1:5)
+
+> names(Fivepointscale) = c(“Not Satisfactory”, “Satisfactory”, “Fair”,
+“Good”, “Very Good”)
+
+> Feedback = Fivepointscale[c(“‘Good”, “Satisfactory’’)]
+
+Create a 7-point scale of information input and use this scale to input feedback
+of 5 students about a question like “Feedback of experience of using an
+
+Data Science Lab
+
+47
+Lab Manual
+
+48
+
+application (Bad, Somewhat bad, not good, ok, good, very good, excellent)”.
+Find the average of the feedback.
+
+Question 6:
+Create two strings and concatenate them.
+Question 7:
+
+Create a long string of words separated by punctuation marks. Replace all
+
+29 ce
+
+the punctuation marks in the string using gsub(“[[:punct:]]’, “”’, stringName)
+function. Find the number of words in the string without punctuation marks.
+Find the number of distinct words and its count, if possible.
+
+Question 8:
+Store content in external files for the following types of data in R:
+Vectors (ii) Lists (iii) Arrays (iv) Data frames (v) Factors
+
+Read those contents into R. Perform operations - sorting on vector data, finding
+the length of lists and adding data items in list, accessing different elements of
+array and comparing it to other values, accessing different components of data
+frames and factors.
+
+Question 9:
+
+Create two matrices of 5 x 5 size using R, add, subtract and multiply these two
+matrices.
+
+Question 10:
+
+Find the transpose of a matrix.
+
+Question 11:
+
+Find the inverse of a matrix.
+
+Question 12:
+
+Create a list of factors. Find the occurrences of each factor in the list.
+Question 13:
+
+Write function to find the largest and smallest values in a 3-dimensional array
+of size 3 x 3 x 3 You should use parameter passing.
+
+Question 14:
+Find the eigen values and eigen vectors of a symmetric matrix.
+Question 15:
+
+Create a table showing the States of 20 students, assume these students stay
+in 5 different states. Now create a factor of these states and then compute the
+frequency of each factor (Hint: You may use factor() and tapply() functions)
+Question 16:
+
+Consider a state wise list of income of few persons. Use factor function to
+create a frequency division of income into 5 factor classes e.g. 10000-50000;
+50000-100000 etc.
+
+Question 17:
+
+Explore different functions in R about strings, arrays, vectors, factors. You may
+also explore different methods of plotting the data.
+
+Session 5 and Session 6: Analysis Using R
+Question 18:
+
+For the question 16, create another factor of State of these people, say these
+persons are residing in Just three states. Create a two-way frequency table of
+Income factor and State. Make suitable assumptions.
+
+Question 19:
+
+Find the details of all the vectors and other variables. Also find the data type of
+all variables. (Hint: use summary() and typeof(), you can also use stem().)
+
+Question 20:
+
+A class has a strength of 50 students. The marks obtained (out of 100) by the
+students of the class are as per the binomial distribution. You should create the
+sample data of marks for the 50 students using binomial distribution. Convert
+these marks to grades as follows:
+
+<40 D
+=>40 but < 60 C
+=>60 but < 80 B
+=> 80 A
+
+Also, create random data for a variable seriousness towards learning having
+the categories: Very Serious, Serious, Not Serious. Use chi-square testing to
+determine, if there is a relation between the seriousness towards learning to
+Grades of student, as per your data. Show and explain the results.
+
+Question 21:
+
+The marks of a class of 50 students are recorded as the final percentage of
+marks. Assume that this percentage data is normally distributed. In addition,
+gender data is also stored. Create the data for the class and draw side by side
+box plot of Girls and Boys marks. Explain the output of the boxplots.
+
+Data Science Lab
+
+49
+Lab Manual
+
+50
+
+Question 22:
+
+Install the inbuilt datasets available with R programming using
+> install.packages(‘datasets.load”’)
+
+Display the dataset airquality using the command
+> datasets: :airquality
+
+Study the variables and observations of the data set. Remove all the
+observations of NA using any method and then draw a scatter plot between
+Ozone and Solar Radiation variables. Perform a linear regression analysis
+between Ozone and Solar Radiation. Explain the selection of independent and
+dependent variables. Also, explain the output of the regression.
+
+Question 23:
+
+Using the airquality dataset, as given above, perform multiple regression of
+Ozone, Solar.R, Wind and Temp variables. Which of them has been selected
+as dependent variable and why? Explain your results.
+
+Question 24:
+
+Study the data set of iris from the given dataset. Use first 100 records of this
+data set into a separate data frame. Create a logistic regression model first
+using just one variable (say using Sepal.Length) to answer the question “If
+the Species is Setosa or not?”. Test your model. Explain your results.
+
+Question 25:
+
+Use the dataset airquality, plot the date/month against the temperature. Also
+plot the moving average at a length of 3. Compare the two results.
+
+Session 7 and Session 8: More Analysis Using R
+Question 26:
+
+Use the sample fictional data set given on the website: https://www.kaggle.
+com/datasets/carlolepelaars/toy-dataset
+
+Study the data set and read only 10,000 rows and all the columns of the
+dataset. The dataset has six variables - Number (row number), City, Gender,
+Age, Income and IIIness. Make decision tree for determining the IIness. You
+must first present the summary of the dataset being used. Explain the resultant
+tree. Can the quality of decisions made by decision tree be enhanced? Justify
+your answer.
+
+Question 27:
+
+Use the same dataset as you generated above. Now use Random forest on the
+dataset, as given above. Explain the confusion matrix in detail.
+Question 28:
+
+Identify a dataset that has rainfall data along with various related factors like
+temperature, pressure, etc. Create first a decision tree to determine the possibility
+of rainfall or absence of it. Also, use random forest to do the same. Compare the
+results of decision tree and random forest.
+
+Question 29:
+
+Create or download sample data of customers of an e-commerce website.
+Consider it has factors like family income, total amount spent last month by
+the customer, Is subscriber of product review pages, etc. Classify the customers
+into the following categories:
+
+High spenders, medium spenders, Low spenders.
+
+You may use any two classification algorithms/ techniques and compare the
+results of the two classifiers.
+
+Question 30:
+
+Assuming that the problem, as given above, does not have any categories.
+Perform k-mean clustering on the data with k=5.
+
+Question 31:
+Perform classification and clustering for easily available datasets.
+
+
+
+
+
+# Question 1 answer
+vec <- c(5,7,9,11,13,13,11,9,7,5)
+cat("Sum - ",sum(vec))
+cat("\nMean - ",mean(vec))
+cat("\nHighest - ",max(vec))
+cat("\nLowest - ",min(vec))
+varian = sum((vec-mean(vec))^2) / length(vec)
+cat("\nVariance - ", varian)
+cat("\nSD - ", sqrt(varian))
+cat("\nIn built Variance - ", var(vec))
+cat("\nIn built SD - ",sd(vec))
+sorted_vec <- sort(vec,decreasing = TRUE)
+print(sorted_vec)
+
+
+#  Question 2
+even_numbers <- seq(2,by=2,length.out=50)
+dec_numbers <- c(30:1)
+
+print(even_numbers)
+print(dec_numbers)
+
+# Question 3
+vec <- c(1,2,3,4,NA,6,NA,8,9,10)
+print(vec)
+print(is.na(vec))
+print(vec[!is.na(vec)])
+
+
+# Question 4
+char_array <- c("This","is","a","is", "character","vector")
+is_index <- which(char_array == "is")
+print(is_index)
+is_index_m <- match("is",char_array)
+print(is_index_m)
+
+# Question 5
+seven.point.scale <- c(1:7)
+names(seven.point.scale) <- c("A","B","C","D","E","F","G")
+print(seven.point.scale)
+feedback <- sample(seven.point.scale,size=5)
+print(feedback)
+# print(seven.point.scale)
+mean_feedback <- mean(feedback)
+cat("mean feedback - ",mean_feedback)
+
+# Question 6
+str1 <- "Hello"
+str2 <- "World"
+str3 <- paste(str1, str2, sep="|")
+print(str3)
+
+
+# Question 7
+str1 <- "Hello Ther ! > this is is a web weaver a movie 4f fdj%^ hj *("
+print(str1)
+str2 <- gsub("[[:punct:]]","",str1)
+print(str2)
+str3 <- strsplit(str2, "\\s+")[[1]]
+print(str3)
+freq <- table(str3)
+print(freq)
+for (name in names(freq)){
+  cat("name - ",name,", value - ",freq[name],"\n")
+}
+print(length(str3))
+
+
+# Question 8
+ve <- c(1:10)
+lis <- list(12,"Hello",ve)
+arr <- array(c(1:25),dim=c(5,5,1))
+df <- data.frame(id=c(1:10))
+fa <- factor(c("Hello","world","bunny","bunny"))
+
+write(ve,"Hello.txt")
+saveRDS(lis,"lis.rds")
+saveRDS(arr,"arr.rds")
+write.csv(df,"df.csv")
+saveRDS(fa,"fa.rds")
+
+ver <- scan("Hello.txt")
+lisr <- readRDS("lis.rds")
+arrr <- readRDS("arr.rds")
+dfr <- read.csv("df.csv")
+fa <- readRDS("fa.rds")
+print("ver - ")
+print(ver)
+print("lisr - ")
+print(lisr)
+print("arrr - ")
+print(arrr)
+print("dfr - ")
+print(dfr)
+print("fa - ")
+print(fa)
+
+sorted_ve <- sort(ver)
+print("sorted array")
+print(sorted_ve)
+
+length_lis <- length(lisr)
+print("Length ")
+print(length_lis)
+
+lisr$d <- c("Hello","There","Obi-Wan Kenobi")
+print("list new column ")
+print(lisr$d)
+
+element <- arrr[3,2,1]
+comparison <- element > 5
+print("comparison")
+print(comparison)
+
+df_col <- df$id
+print("Data Frame ")
+print(df_col)
+
+fa_levels <- levels(fa)
+print("Levels")
+print(fa_levels)
+
+
+
+
+# Question 9
+mat1 <- matrix(c(1:25),nrow=5,byrow=TRUE)
+print(mat1)
+mat2 <- matrix(c(46:70),nrow=5)
+print(mat2)
+
+add_mat <- mat1 + mat2
+print("Addition ")
+print(add_mat)
+sub_mat <- mat1 - mat2
+print("Subtraction ")
+print(sub_mat)
+mul_mat <- mat1 * mat2
+print("Multiply ")
+print(mul_mat)
+
+# Question 10 
+t_mat2 <- t(mat2)
+print("Matrix Transpose")
+print(t_mat2)
+
+# Question 11
+print("Matrix Inverse")
+matr_1 <- matrix(c(1,3,5,34,6,4,2,4,8),nrow=3,byrow=TRUE)
+print(matr_1)
+det_m1 <- det(matr_1)
+if(det_m1 != 0){
+  inv_m1 <- solve(matr_1)
+  print("Inverse ")
+  print(inv_m1)
+} else {
+  print("No inverse exists")
+}
+
+
+
+
+# Question 12
+fa <- factor(c("H","G","A","B","G","B","H"))
+fa_occurences <- table(fa)
+print("Occurences")
+print(fa_occurences)
+
+# Question 13
+mat1 <- matrix(c(1:9),nrow=3,byrow=TRUE)
+mat2 <- matrix(c(10:18),nrow=3)
+dot_pr <- mat1 %*% mat2
+print("Dot Product")
+print(dot_pr)
+
+min_max <- function(arr){
+  minv <- min(arr)
+  maxv <- max(arr)
+  return (list(maxq=maxv,minq=minv))
+}
+
+arr <- array(c(1:27),dim=c(3,3,3))
+result <- min_max(arr)
+cat("Min value - ",result$minq, "Max value - ",result$maxq)
+
+
+
+# Question 14
+me <- matrix(c(1:9),nrow=3,byrow=TRUE)
+eigen_values <- eigen(me)
+print("eigen values")
+print(eigen_values$values)
+print("eigen vectors")
+print(eigen_values$vectors)
+
+# Question 15
+states <-c("AP","UP","Kerala","Tamil Nadu")
+print("States :")
+print(states)
+student_states <- sample(states,20,replace=TRUE)
+print("Student States ")
+print(student_states)
+
+stu_states_freq <- table(student_states)
+print("Student State Frequency")
+print(stu_states_freq)
+
+
+
+
+
+
+
+# Question 16
+incomes <- c(45000, 60000, 75000, 120000, 30000, 
+             80000, 100000, 200000, 50000, 70000, 
+             25000, 55000, 65000, 150000, 95000, 
+             110000, 40000, 85000, 105000, 5000)
+breaks <- c(0,10000,50000,100000,150000,200000,Inf)
+labels <- c("0-10k","10k-50k","50k-100k","100k-150k","150k-200k","200k+")
+income_fc <- cut(incomes, breaks=breaks,labels=labels)
+income_freq <- table(income_fc)
+print("Breaks ")
+print(breaks)
+print("Labels ")
+print(labels)
+print("Income Factors ")
+print(income_fc)
+print("Income Frequencies")
+print(income_freq)
+
+# Question 17
+
+str_text <- "Hello, R Language"
+str_sub <- substr(str_text,1,5)
+print(str_text)
+print(str_sub)
+strs <- strsplit(str_text, " ")
+print(strs)
+print(toupper(str_text))
+print(tolower(str_text))
+print(gsub("R", "Java",str_text))
+print(grep("Hello", str_text))
+
+# arrays
+arr <- array(c(1:25),dim=c(5,5,1))
+print(arr)
+print(length(arr))
+print(dim(arr))
+print(arr[1,2,1])
+
+fa <- c("ap","up","kerala","Tamil nadu","California","up","ap")
+print("vector")
+print(fa)
+fac <- factor(fa)
+print("Factors")
+print(fac)
+print("Levels")
+print(levels(fac))
+print("Length")
+print(length(fac))
+fa_ta <- table(fac)
+print("Table")
+print(fa_ta)
+
+# Practice code
+ve <- seq(0,100,by=2)
+print("Vector")
+print(ve)
+breaks <- seq(0,100,by=10)
+print("Breaks")
+print(breaks)
+labels <- c("0-10","10-20","20-30","30-40",
+            "40-50","50-60","60-70","70-80","80-90","90-100")
+print("labels")
+print(labels)
+ve_factor <- cut(ve, breaks=breaks,labels=labels)
+print("factors")
+print(ve_factor)
+ve_freq <- table(ve_factor)
+print("Frequency")
+print(ve_freq)
+hist(ve,breaks = breaks,main="Hello",xlab="X",ylab="Frequency")
+
+
+
+
+# Question 18
+incomes <- c(45000, 60000, 75000, 120000, 30000, 
+             80000, 100000, 200000, 50000, 70000, 
+             25000, 55000, 65000, 150000, 95000, 
+             110000, 40000, 85000, 105000, 5000)
+breaks <- c(0,10000,50000,100000,150000,200000,Inf)
+labels <- c("0-10k","10k-50k","50k-100k","100k-150k","150k-200k","200k+")
+
+income_factor <- cut(incomes, breaks=breaks,labels=labels)
+print("Income Factor")
+print(income_factor)
+income_freq <- table(income_factor)
+print("Frequency")
+print(income_freq)
+
+states <- c("California","Florida","New York")
+income_length <- length(incomes)
+student_states <- sample(states,income_length,replace=TRUE)
+student_states_fa <- as.factor(student_states)
+student_states_freq <- table(student_states_fa)
+print("Student States")
+print(student_states)
+print("Student Frequency")
+print(student_states_freq)
+print(table(income_factor,student_states_fa))
+
+
+
+# Question 19
+ve <- c(1:10)
+lisr <- list(a=c(1:20),b=c("One","Two"))
+arr <- array(c(1:25),dim=c(5,5,1))
+mat1 <- matrix(c(1:25),nrow=5,byrow=TRUE)
+print("Type Of")
+print(typeof(ve))
+print(typeof(lisr))
+print(typeof(arr))
+print(typeof(mat1))
+print("Summary")
+print(summary(ve))
+print(summary(lisr))
+print(summary(arr))
+print(summary(mat1))
+print(stem(ve))
+
+
+
+
+# Question 20
+no_students <- 50
+student_marks <- rbinom(no_students,100,prob=0.7)
+breaks <- c(0,40,60,80,100)
+labels <- c("D","C","B","A")
+student_grades <- cut(student_marks,breaks=breaks,labels=labels)
+ser <- c("Very Serious","Serious","Not Serious")
+student_ser <- sample(ser,50,replace = TRUE)
+
+print("Marks")
+print(student_marks)
+print("Grades")
+print(student_grades)
+print("Seriousness")
+print(student_ser)
+results <- chisq.test(student_ser,student_grades)
+# results <- fisher.test(student_ser,student_grades)
+print("Chi Sq test")
+print(results)
+
+
+
+# Question 21
+no_students = 50
+student_percentage <- rnorm(no_students,mean=65,sd=10)
+student_percentage <- pmin(pmax(student_percentage,0),100)
+print(student_percentage)
+student_gender <- sample(c("Male","Female"),50,replace=TRUE)
+df <- data.frame(percentage=student_percentage,gender=student_gender)
+boxplot(percentage~gender,df,main="BoxPlot",xlab = "Gender",
+        ylab="Percentage",col=c("red","green"))
+
+
+
+        # Question 22
+install.packages("datasets.load")
+library(datasets)
+data("airquality")
+
+airquality_clean <- na.omit(airquality)
+print("Air Quality Clean")
+head(airquality)
+
+plot(airquality_clean$Ozone,
+     airquality_clean$Solar.R,
+     main="Ozone vs Solar.R",
+     xlab="",
+     ylab="")
+mtext("Ozone",side=1,line=2.5,col="red")
+mtext("Solar.R",side=2,line=2.5,col="green")
+
+model <- lm(Solar.R~Ozone,data=airquality_clean)
+print(model)
+
+df = data.frame(Ozone=34)
+predictions <- predict(model,newdata=df,type="response")
+print("Predictions")
+print(predictions)
+
+
+
+# Question 23
+install.packages("datasets.load")
+library(datasets)
+data("airquality")
+
+airquality_clean = na.omit(airquality)
+head(airquality_clean)
+model <- lm(Ozone~Solar.R+Wind+Temp,data=airquality_clean)
+print(model)
+
+df = data.frame(Solar.R=188.5,Wind=6.5,Temp=61.5)
+head(df)
+
+predictions <- predict(model,newdata=df,type="response")
+print("Predictions")
+print(predictions)
+
+
+# Question 24
+install.packages("caTools")
+library("caTools")
+data("iris")
+iris$IsSetosa <- ifelse(iris$Species == "setosa",1,0)
+sample_data <- sample.split(iris, SplitRatio = 0.8)
+train_data <- subset(iris,sample_data == TRUE)
+test_data <- subset(iris,sample_data == FALSE)
+
+model <- glm(IsSetosa~Sepal.Length,data=train_data,family=binomial)
+print(model)
+summary(model)
+
+predictions <- predict(model, newdata=test_data,type="response")
+print(predictions)
+pred_classes <- ifelse(predictions > 0.5, 1, 0)
+
+confusion_matrix <- table(test_data$IsSetosa, pred_classes)
+print(confusion_matrix)
+
+acc <- sum(diag(confusion_matrix)) /sum(confusion_matrix)
+cat("Accuracy - ", acc)
+
+
+
+
+
+# Question 25
+data("airquality")
+airquality_clean <- na.omit(airquality[,c("Month","Day","Temp")])
+airquality_clean$Date <- as.Date(paste(1973,airquality_clean$Month,airquality_clean$Day,sep="-"))
+
+plot(airquality_clean$Date,airquality_clean$Temp,main="Date vs Temp", col="red",type="l",
+     xlab="Date",ylab="Temp")
+
+library(zoo)
+
+airquality_clean$RTemp <- rollmean(airquality_clean$Temp, 3 , fill=NA)
+lines(airquality_clean$Date, airquality_clean$RTemp, col="blue")
+
+legend("topright",legend=c("Temp","RTemp"),col=c("red",blue))
+
+
+
+
+
+
+# Question 26 - did not download dataset from kaggle instead applied decision tree
+# on default available iris dataset
+library(party)
+library(caTools)
+data("iris")
+
+iris_c <- na.omit(iris)
+sample_data <- sample.split(iris_c, SplitRatio=0.8)
+train_data <- subset(iris_c,sample_data == TRUE)
+test_data <- subset(iris_c, sample_data == FALSE)
+
+model <- ctree(Species~.,data=train_data)
+print(model)
+summary(model)
+plot(model)
+predictions <- predict(model, newdata=test_data,type="response")
+print(predictions)
+confusion_matrix <- table(test_data$Species, predictions)
+print("Confusion Matrix")
+print(confusion_matrix)
+acc <- sum(diag(confusion_matrix)) / sum(confusion_matrix)
+cat("Accuracy - ",acc)
+
+
+
+
+# Question 27 - Applied Random Forest on reading skills dataset from the party package
+library(caTools)
+library(randomForest)
+
+library(party)
+
+data("readingSkills")
+
+head(readingSkills)
+
+read_clean <- na.omit(readingSkills)
+
+sample_data <- sample.split(read_clean,SplitRatio = 0.8)
+train_data <- subset(read_clean,sample_data == TRUE)
+test_data <- subset(read_clean,sample_data == FALSE)
+
+model <- randomForest(nativeSpeaker~age+score,data=train_data)
+print(model)
+summary(model)
+plot(model)
+
+predictions <- predict(model, newdata=test_data,type="response")
+print(predictions)
+
+confusion_matrix <- table(test_data$nativeSpeaker,predictions)
+print(confusion_matrix)
+acc <- sum(diag(confusion_matrix)) / sum(confusion_matrix)
+cat("Accuracy - ", acc)
+
+................................................................. Question paper 1
+
+weights <- c(45,55,65,38,48,50,54,60,39,49)
+
+min_weight <- min(weights)
+max_Weight <- max(weights)
+cat("min weight - ",min_weight)
+cat("max weight - ", max_Weight)
+
+breaks <- seq(30,70,by=10)
+frequencies <- cut(weights, breaks=breaks,right=FALSE)
+table_frequencies <- table(frequencies)
+
+cat("breaks - ", breaks)
+print("frequencies - ")
+print(frequencies)
+print("Tables - ")
+print(table_frequencies)
+
+hist(weights, breaks=breaks, right=FALSE, col="lightblue",
+     main="Weight Frequency Distribution",
+     xlab="Weights",
+     ylab="Frequency")
+
+weights_40_49 <- weights[weights >=40 & weights <= 49]
+cat("Weights 40 and 49 = ", weights_40_49)
+percentage_we <- length(weights_40_49)/ length(weights) * 100
+cat("Percentage - ",percentage_we)
+      
+
+
+
+
+................................................................. Question paper 2
+
+
+
+
+
+
+hW <- data.frame(
+  height = c(160,155,175,163,171,183,159,162),
+  weight = c(65,60,75,65,73,85,60,65)
+)
+head(hW)
+summary(hW)
+
+model <- lm(weight~height,data=hW)
+print(model)
+
+test_data = data.frame(height=165)
+predictions <- predict(model,newdata=test_data,type="response")
+print(predictions)
+
+
+................................................................. Question paper 3
+
+
+
+income_data <- c(25000,35000,30000,45000,29000,
+                 27000,47000, 51000,25000,39000)
+breaks = seq(20000,60000, by=10000)
+print(breaks)
+income_freq <- cut(income_data, breaks=breaks, right=FALSE)
+print("Frequencies ")
+print(income_freq)
+freq_table <- table(income_freq)
+print("Freq Table ")
+print(freq_table)
+
+hist(income_data, breaks=breaks, col="lightblue",
+     main="Frequency Distribution",
+     xlab="income",ylab="Frequency")
+
+
+
+
+
+
+................................................................. Question paper 4
+
+
+
+student_data = data.frame(
+  student_number = c(1:10),
+  study_time = c(5,6,3,4,1,2,8,6,7,4),
+  final_percentage = c(75,75,60,62,55,58,80,75,80,60)
+)
+head(student_data)
+
+model <- lm(final_percentage~study_time,data=student_data)
+print(model)
+
+new_student_data <- data.frame(study_time=5)
+
+predictions <- predict(model, newdata=new_student_data,type="response")
+print("Predictions ")
+print(predictions[1])
+
+
+
+.................................................................
+
+
+#Use the dataset airquality, plot the date/month against the temperature. Also plot the moving
+#average at a length of 3. Compare the two results.
+
+# Load the airquality dataset
+data("airquality")
+
+# Calculate the moving average of temperature with a window length of 3
+moving_avg_temp <- stats::filter(airquality$Temp, rep(1/3, 3), sides = 2)
+
+# The moving_avg_temp vector will be shorter than the original data
+# We need to pad the result with NAs to match the length
+moving_avg_temp <- c(NA, moving_avg_temp, NA)
+
+# Add the moving average to the original data frame
+airquality$MovingAvgTemp <- moving_avg_temp
+
+# Plotting Temperature vs Date
+plot(airquality$Temp, type = "o", col = "blue", xlab = "Day of the Year",
+     ylab = "Temperature (�F)", main = "Temperature and 3-Day Moving Average",
+     xaxt = "n")
+axis(1, at = seq(1, nrow(airquality), by = 30), labels = paste(airquality$Month, airquality$Day, sep = "-")[seq(1, nrow(airquality), by = 30)])
+lines(airquality$MovingAvgTemp, col = "red", lwd = 2)
+
+# Add a legend
+legend("topright", legend = c("Daily Temperature", "3-Day Moving Average"),
+       col = c("blue", "red"), lty = 1, lwd = 2)
+
+
+
+.................................................................
+#The marks of a class of 50 students are recorded as the final percentage of marks. Assuming
+#that the percentage data is normally distributed. In addition, gender data is also stored. Create
+#the data for the class and draw side by side box plot of Girls and Boys marks. Explain the
+#output of the boxplots.
+
+
+# Set seed for reproducibility
+set.seed(123)
+
+# Generating normally distributed marks for boys and girls
+# Assume there are 25 boys and 25 girls
+boys_marks <- rnorm(25, mean = 70, sd = 10) # Boys' marks, mean = 70, sd = 10
+girls_marks <- rnorm(25, mean = 75, sd = 10) # Girls' marks, mean = 75, sd = 10
+
+# Combining the data
+marks <- c(boys_marks, girls_marks)
+gender <- factor(rep(c("Boys", "Girls"), each = 25))
+
+# Creating a data frame
+data <- data.frame(Marks = marks, Gender = gender)
+
+# Plotting side-by-side boxplots
+boxplot(Marks ~ Gender, data = data, main = "Boxplot of Marks by Gender",
+        ylab = "Marks", xlab = "Gender", col = c("lightblue", "lightpink"))
+
+# Add grid lines for better readability
+grid()
+
+
+
+.................................................................
+
+
+
+# Creating a matrix
+matrix_data <- matrix(c(1, 2, 3, 4), nrow = 2, ncol = 2)
+
+# Finding the inverse of the matrix
+inverse_matrix <- solve(matrix_data)
+inverse_matrix
+
+
+
+.................................................................
+
+
+
+# Storing a vector
+vector_data <- c(10, 3, 7, 5, 2)
+write(vector_data, "vector_data.txt")
+
+# Reading the vector
+read_vector <- scan("vector_data.txt")
+read_vector
+
+# Sorting the vector
+sorted_vector <- sort(read_vector)
+sorted_vector
+
+# Storing a list
+list_data <- list(name = "Alice", age = 25, score = c(85, 90, 95))
+saveRDS(list_data, "list_data.rds")
+
+# Reading the list
+read_list <- readRDS("list_data.rds")
+read_list
+
+# Finding the length of the list and adding a data item
+list_length <- length(read_list)
+read_list$city <- "New York"
+list_length
+read_list
+
+# Storing an array
+array_data <- array(1:12, dim = c(3, 4))
+saveRDS(array_data, "array_data.rds")
+
+# Reading the array
+read_array <- readRDS("array_data.rds")
+read_array
+
+# Accessing different elements of the array
+element <- read_array[2, 3]
+element
+
+
+# Storing a data frame
+data_frame <- data.frame(Name = c("John", "Doe", "Alice"), Age = c(28, 34, 23), Score = c(90, 85, 88))
+write.csv(data_frame, "data_frame.csv", row.names = FALSE)
+
+# Reading the data frame
+read_data_frame <- read.csv("data_frame.csv")
+read_data_frame
+
+# Accessing different components of the data frame
+column_names <- colnames(read_data_frame)
+first_row <- read_data_frame[1, ]
+column_names
+first_row
+
+# Storing a factor
+factor_data <- factor(c("High", "Medium", "Low", "Medium", "High"))
+saveRDS(factor_data, "factor_data.rds")
+
+# Reading the factor
+read_factor <- readRDS("factor_data.rds")
+read_factor
+
+# Accessing different components of the factor
+levels <- levels(read_factor)
+levels
+
+
+
+
+.................................................................
+
+
+
+
+#Create a 7-point scale of information input and use this scale to input feedback of 5 students about a question like "Feedback of experience of using an application (Bad, Somewhat bad, not good, ok, good, very good, excellent)". Find the average of the feedback.
+
+# Creating a 7-point scale
+SevenPointScale <- 1:7
+names(SevenPointScale) <- c("Bad", "Somewhat bad", "Not good", "Ok", "Good", "Very good", "Excellent")
+
+# Feedback of 5 students
+Feedback <- SevenPointScale[c("Good", "Very good", "Ok", "Bad", "Excellent")]
+
+# Finding the average of the feedback
+average_feedback <- mean(Feedback)
+average_feedback
+
+
+
+.................................................................
+
+
+
+#Create a vector of size 10 with 5th and 7th values as missing (store these values as NA). Use the "is.na()" to find locations of missing data.
+
+# Creating a vector of size 10 with 5th and 7th values as NA
+vector <- c(1, 2, 3, 4, NA, 6, NA, 8, 9, 10)
+
+# Using is.na() to find locations of missing data
+missing_indices <- which(is.na(vector))
+missing_indices
+
+
+
+
+
+.................................................................
+Grouped frequency distribution with weights of students
+# Weight data of 10 students
+weights <- c(45, 55, 65, 38, 48, 50, 54, 60, 39, 49)
+# (i) Finding the minimum and maximum weight
+min_weight <- min(weights)
+max_weight <- max(weights)
+cat("Minimum weight:", min_weight, "\n")
+cat("Maximum weight:", max_weight, "\n")
+# (ii) Create a grouped frequency distribution and relevant graph
+# Define the breaks for the bins
+breaks <- seq(35, 70, by = 5)
+# Cut the data into bins
+grouped_data <- cut(weights, breaks, right = FALSE)
+# Create a frequency table
+frequency_table <- table(grouped_data)
+# Print the frequency table
+cat("Frequency Table:\n")
+print(frequency_table)
+# Plot the grouped frequency distribution
+barplot(frequency_table, main = "Grouped Frequency Distribution",
+xlab = "Weight Groups", ylab = "Frequency", col = "lightblue", border = "black")
+# (iii) Find the percentage of weights between 40 and 49
+weights_40_49 <- weights[weights >= 40 & weights < 50]
+percentage_40_49 <- (length(weights_40_49) / length(weights)) * 100
+cat("Percentage of weights between 40 and 49:", percentage_40_49, "%\n")
+
+
+.................................................................
+
+
+
+Write R program for the following income data of 10 persons: 20
+25,000 35,000 30,000 45,000 29,000
+27,000 47,000 51,000 25,000 39,000
+Write a R program to create a frequency distribution in the three classes:
+20,000 – 30,000
+30,000 – 40,000
+40,000 – 50,000
+Also write R program to draw appropriate chart for the frequency distribution.
+# Income Data
+income <- c(25000, 35000, 30000, 45000, 29000, 27000, 47000, 51000, 25000, 39000)
+# Create a Data Frame
+data <- data.frame(income)
+# Create a Frequency Distribution
+breaks <- c(20000, 30000, 40000, 50000, 60000) # Extend the range to cover all data points
+freq_distribution <- cut(data$income, breaks, right=FALSE)
+freq_table <- table(freq_distribution)
+# Print the Frequency Distribution
+print(freq_table)
+# Plot a Histogram for the Frequency Distribution
+hist(data$income, breaks=breaks, right=FALSE, main="Income Frequency Distribution",
+xlab="Income Range", col="lightblue")
+# Plot a Bar Chart for the Frequency Distribution
+barplot(freq_table, main="Income Frequency Distribution", xlab="Income Range",
+ylab="Frequency", col="lightblue")
+
+
+
+.................................................................
+Sequence plot
+# Generate sequence
+data <- seq(1, 100, by = 2)
+# Calculate statistics
+mean_data <- mean(data)
+median_data <- median(data)
+sd_data <- sd(data)
+# Plot the sequence
+plot(data, type = "o", col = "blue", main = "Sequence from 1 to 100 (step 2)",
+xlab = "Index", ylab = "Value")
+
+
+
+.................................................................
+LINEAR REGRESSION ON IRIS DATASET
+# Load the iris dataset
+data(iris)
+# Fit a linear regression model
+model <- lm(Sepal.Length ~ Sepal.Width, data = iris)
+# Model summary
+summary(model)
+plot(iris$Sepal.Length, iris$Sepal.Width, main = "Sepal Length vs Sepal Width",
+xlab = "Sepal Length", ylab = "Sepal Width",
+pch = 19, col = "blue")
+abline(model, col = "red", lwd = 2
+
+
+.................................................................
+
+
+
+HISTOGRAM PLOTTING & SUMMARY SHOWING USING PREDETERMINED DATASET
+# Load the mtcars dataset
+data(mtcars)
+# Summary statistics
+summary(mtcars)
+# Plot distribution of mpg
+hist(mtcars$mpg, main = "Distribution of MPG", xlab = "Miles Per Gallon", col = "blue", border =
+"black")
+
+
+
+.................................................................
+
+
+
+# Data
+math_marks <- c(75, 60, 35, 50, 45, 90, 85, 99)
+physics_marks <- c(85, 50, 50, 50, 70, 95, 95, 80)
+# Create a data frame
+df <- data.frame(Mathematics = math_marks, Physics = physics_marks)
+# Calculate average marks
+avg_math <- mean(df$Mathematics)
+avg_physics <- mean(df$Physics)
+# Print averages
+print(paste("Average marks in Mathematics:", avg_math))
+print(paste("Average marks in Physics:", avg_physics))
+# Plot the scatter plot
+plot(df$Mathematics, df$Physics,
+main="Scatter Plot of Marks in Mathematics vs Marks in Physics",
+xlab="Marks in Mathematics",
+ylab="Marks in Physics",
+pch=19,
+col="blue")
+
+
+
+.................................................................
+Use R programming to fit a linear regression line to predict the effect of study
+time on the final percentage of the students. Use this regression line to predict
+the final percentage of a student who studies for 5 hours every day.
+# Data
+study_time <- c(5, 6, 3, 4, 1, 2, 8, 6, 7, 4)
+final_percentage <- c(75, 75, 60, 62, 55, 58, 80, 75, 80, 60)
+# Create a Data Frame
+data <- data.frame(study_time, final_percentage)
+# Fit a Linear Regression Model
+model <- lm(final_percentage ~ study_time, data=data)
+# Print the Summary of the Model
+summary(model)
+# Predict the Final Percentage for 5 Hours of Study Time
+new_data <- data.frame(study_time = 5)
+predicted_percentage <- predict(model, new_data)
+# Print the Predicted Percentage
+predicted_percentage
+
+
+
+.................................................................
+
+
+The following data was collected to predict the weight of a person from his/her
+height: 20
+Height
+(cm)
+160 155 175 163 171 183 159 162
+Weight
+(Kg)
+65 60 75 65 73 85 60 65
+Use R programming to fit a linear regression line to predict the weight of a
+person using his/her height. Also, predict the weight of a person whose height
+is 165 cms.
+# Heights and Weights Data
+height <- c(160, 155, 175, 163, 171, 183, 159, 162)
+weight <- c(65, 60, 75, 65, 73, 85, 60, 65)
+# Create a Data Frame
+data <- data.frame(height, weight)
+# Fit a Linear Regression Model
+model <- lm(weight ~ height, data=data)
+# Print the Summary of the Model
+summary(model)
+# Predict the Weight for a Height of 165 cm
+new_height <- data.frame(height = 165)
+predicted_weight <- predict(model, new_height)
+# Print the Predicted Weight
+predicted_weight
+
+
+
+.................................................................
+
+
+
